@@ -147,7 +147,7 @@ class _AssignmentsPageState extends State<AssignmentsPage> {
                           ),
                           subtitle: Text(assignment.course),
                           secondary: IconButton(
-                            tooltip: 'Supprimer ' + assignment.title',
+                            tooltip: 'Supprimer ' + assignment.title,
                             icon: const Icon(Icons.delete_outline),
                             onPressed: () => _deleteAssignment(assignment),
                           ),
@@ -177,8 +177,8 @@ class _SummaryCard extends StatelessWidget {
         margin: const EdgeInsets.all(16),
         child: ListTile(
           leading: const CircleAvatar(child: Icon(Icons.school)),
-          title: Text('$remaining devoir(s) à faire'),
-          subtitle: Text('$total devoir(s) au total'),
+          title: Text(remaining.toString() + ' devoir(s) à faire'),
+          subtitle: Text(total.toString() + ' devoir(s) au total'),
         ),
       );
 }
