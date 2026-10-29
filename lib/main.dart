@@ -147,7 +147,7 @@ class _AssignmentsPageState extends State<AssignmentsPage> {
                           ),
                           subtitle: Text(assignment.course),
                           secondary: IconButton(
-                            tooltip: 'Supprimer ${assignment.title}',
+                            tooltip: 'Supprimer ' + assignment.title',
                             icon: const Icon(Icons.delete_outline),
                             onPressed: () => _deleteAssignment(assignment),
                           ),
